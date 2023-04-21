@@ -27,5 +27,7 @@ jobs:
         env:
           BDUSS: ${{ secrets.BDUSS }}
         run: python main.py
+      - name: 'check out for keep alive'
+        uses: actions/checkout@v3
       - name: 'keep alive workflow'
         uses: gautamkrishnar/keepalive-workflow@v1
