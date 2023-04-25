@@ -2,7 +2,7 @@
 
 ## 今日签到状态
 
-![Baidu Tieba Auto Sign](https://github.com/gwtak/TieBaSign/workflows/Baidu%20Tieba%20Auto%20Sign/badge.svg)
+![Baidu Tieba Auto Sign](https://github.com/QinghangPeng/TieBaSign/workflows/Baidu%20Tieba%20Auto%20Sign/badge.svg)
 
 ## 使用说明
 
@@ -20,6 +20,7 @@
 ![修改README](/img/edit.png)
 
 - 修改任意内容，这里在末尾插入了空格。移动到最下面，点击提交。
+- 修改**今日签到状态**workflow中用户名，用于实时检查action是否运行成功
 
 ![添加空行](/img/update.png)
 
