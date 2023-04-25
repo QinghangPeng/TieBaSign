@@ -12,14 +12,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Set timezone'
-        uses: szenius/set-timezone@v${{ github.sha }}
+        uses: szenius/set-timezone@v1.2
         with:
           timezoneLinux: 'Asia/Shanghai'
           timezoneMacos: "Asia/Shanghai"
       - name: 'Checkout codes'
-        uses: actions/checkout@v${{ github.sha }}
+        uses: actions/checkout@v3
       - name: 'Set python'
-        uses: actions/setup-python@v${{ github.sha }}
+        uses: actions/setup-python@v4
         with:
           python-version: '3.10'
       - name: 'Install dependencies'
@@ -29,4 +29,4 @@ jobs:
           BDUSS: ${{ secrets.BDUSS }}
         run: python3 main.py
       - name: 'keep alive workflow'
-        uses: gautamkrishnar/keepalive-workflow@v${{ github.sha }}
+        uses: gautamkrishnar/keepalive-workflow@v1
